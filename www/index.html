@@ -1,0 +1,67 @@
+<html>
+    <head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+        <title>Wildlife-Snap!</title>
+		
+		<script>
+			function pageProject()
+			{
+				window.location = "project.html";
+			}
+			function pageNorthEast()
+			{
+				window.location = "north_east_home.html";
+			}
+			function pageSouth()
+			{
+				window.location = "south_home.html";
+			}
+			function pageMidwest()
+			{
+				window.location = "mid_west_home.html";
+			}
+			function pageWest()
+			{
+				window.location = "west_home.html";
+			}
+		</script>
+    </head>
+	
+    <body>
+	
+	<br><br>
+	
+        <h1><center>Wildlife <img src="app_logo.png" alt="Blank"> Snap</center></h1><br />
+ 
+		<center>
+			
+		<div class="dropdown">
+		  <button class="dropbtn">Pick A Region Here</button>
+		  <div class="dropdown-content">
+			<a onclick="pageNorthEast()">Northeast</a>
+			<a onclick="pageMidwest()">Midwest</a>
+			<a onclick="pageWest()">West</a>
+			<a onclick="pageSouth()">South</a>
+		  </div>
+		</div>
+		
+		</center>
+		
+		<center> <img src="map.jpg" width="350" height="234" usemap="#us_map"> </center>
+		<map name = "us_map">
+			<area shape="rect" coords="278,0,349,113" onclick="pageNorthEast()" alt="nort east">
+			<area shape="rect" coords="136,0,266,117" onclick="pageMidwest()" alt="mid west">
+			<area shape="rect" coords="0, 0, 124, 234" onclick="pageWest()" alt="west">
+			<area shape="rect" coords="132, 119, 349, 233" onclick="pageSouth()" alt="south">
+		</map>
+
+		<br><br><br><br><br><br><br><br><br><br><br><br>
+		
+		<center>
+			<a onclick="pageProject()">Project Details</a>
+		</center>
+		
+    </body>
+</html>
+
+
